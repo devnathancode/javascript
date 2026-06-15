@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Seleção de Veículo</title>
+</head>
+<body>
+    <script>
+        const veiculo = prompt('Digite o veículo. C - Carro, m - Moto').toLowerCase();
+        let modelocarro = 'null';
+        let corcarro = 'null';
+        let modelomoto = 'null';
+        let cormoto = 'null';
+        if (veiculo === 'c') {
+            modelocarro = prompt('Digite o modelo ca - Caminhonete, e- Elétrico').toLowerCase();
+
+            if (modelocarro === 'ca') {
+                corcarro = prompt('Digite a cor do carro: b-branco a-azul').toLowerCase();
+
+                if (corcarro === 'a') {
+                    alert('Seu carro é uma caminhonete azul');
+                }
+                else {
+                    alert('Seu carro é uma caminhonete branca');
+                }
+            }
+           
+        }
+         if (veiculo === 'm') {
+                modelomoto = prompt('Digite o modelo da sua moto, b-bmw k-kawasaki').toLowerCase();
+                if ( modelomoto === 'b') {
+                    cormoto = prompt('Cor da moto br - branco, p - preto').toLowerCase();
+                    if (cormoto === 'br') {
+                        alert('Sua moto é uma BMW Branca');
+                    }
+                    else {
+                        alert('Sua moto é uma BMW preta');
+                    }
+                }
+                if (modelomoto === 'k') {
+                    cormoto = prompt('digite a cor da sua moto, p-preto b-branco').toLowerCase();
+                    if (cormoto === 'p') {
+                        alert('sua moto e uma kawasaki preta');
+                    } else {
+                        alert('sua moto e uma kawasaki branca');
+                    }
+                }
+
+            }
+    </script>
+</body>
+</html>
