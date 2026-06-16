@@ -1,53 +1,49 @@
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Seleção de Veículo</title>
-</head>
-<body>
-    <script>
-        const veiculo = prompt('Digite o veículo. C - Carro, m - Moto').toLowerCase();
-        let modelocarro = 'null';
-        let corcarro = 'null';
-        let modelomoto = 'null';
-        let cormoto = 'null';
-        if (veiculo === 'c') {
-            modelocarro = prompt('Digite o modelo ca - Caminhonete, e- Elétrico').toLowerCase();
+const veiculos = prompt('escolha qual veiculo deseja, CA- carro M- moto').toLowerCase();
+let modelodocarro = 'null';
+let cordocarro = 'null';
+let modelomoto = 'null';
+let cormoto = 'null';
 
-            if (modelocarro === 'ca') {
-                corcarro = prompt('Digite a cor do carro: b-branco a-azul').toLowerCase();
 
-                if (corcarro === 'a') {
-                    alert('Seu carro é uma caminhonete azul');
-                }
-                else {
-                    alert('Seu carro é uma caminhonete branca');
-                }
-            }
-           
+if (veiculos === 'ca') {  
+   modelodocarro = prompt('digite o modelo do carro, CA- CAMINHONETE  E- ELETRICO').toLowerCase();
+if (modelodocarro === 'ca') {
+    cordocarro = prompt('digite a cor do seu carro, B- BRANCo P- PRETo').toLowerCase();
+    if (cordocarro === 'b') {
+        alert('seu carro e uma caminhonete branca');
+    } else {
+        alert('seu carro e uma caminhonete preta');
+    } 
+    }
+    if (modelodocarro === 'e') {
+        cordocarro = prompt('digite a cor do seu carro, b- branco p- preto').toLowerCase();
+        if (cordocarro === 'b') {
+            alert('seu carro e eletrico e branco');
+        } else {
+            alert('seu carro e eletrico e preto')
         }
-         if (veiculo === 'm') {
-                modelomoto = prompt('Digite o modelo da sua moto, b-bmw k-kawasaki').toLowerCase();
-                if ( modelomoto === 'b') {
-                    cormoto = prompt('Cor da moto br - branco, p - preto').toLowerCase();
-                    if (cormoto === 'br') {
-                        alert('Sua moto é uma BMW Branca');
-                    }
-                    else {
-                        alert('Sua moto é uma BMW preta');
-                    }
-                }
-                if (modelomoto === 'k') {
-                    cormoto = prompt('digite a cor da sua moto, p-preto b-branco').toLowerCase();
-                    if (cormoto === 'p') {
-                        alert('sua moto e uma kawasaki preta');
-                    } else {
-                        alert('sua moto e uma kawasaki branca');
-                    }
-                }
+    }
+}
+    if (veiculos === 'm') { 
 
-            }
-    </script>
+    modelomoto = prompt('digite o modelo da sua moto, K- kawasaki F- fan-160').toLowerCase();
+    if (modelomoto === 'k') {
+        cormoto = prompt('digite a cor da sua moto, b- branco p- preto').toLowerCase();
+        if (cormoto === 'b') {
+            alert('a moto e uma kawasaki branca');
+        } else {
+            alert('a moto e uma kawasaki preta');
+        }
+    }
+    if (modelomoto === 'f') {
+        cormoto = prompt('digite a cor da sua moto, b- branca p- preta').toLowerCase();
+        if (cormoto === 'b') {
+            alert('sua moto e uma fan-160 branca');
+        } else {
+            alert('sua moto e uma fan-160 preta');
+        }
+    }
+}
 </body>
 </html>
