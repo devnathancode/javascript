@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <script>
+    let cidade = prompt('digite o nome da sua cidade');
+    let bairro = prompt('digite o nome do seu bairro');
+    let rua = prompt('digite o nome da sua rua');
+    let casa = Number(prompt('digite o numero da sua casa'));
+
+    alert(`o nome da sua cidade é ${cidade} seu bairro é ${bairro} o nome da sua rua é ${rua} o numero da sua casa é ${casa}`);
+
+  </script>
+
+</body>
+</html>
