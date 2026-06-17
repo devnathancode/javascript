@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <script>
+
+     let nome = prompt('digite seu nome').trim();
+     let idade = Number(prompt('digite sua idade'));
+
+     alert(`ola ${nome} voce tem ${idade} anos`);
+     
+  </script>
+
+</body>
+</html>
