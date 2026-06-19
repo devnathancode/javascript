@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <script>
+     let a = 'vermelho';
+     let b = 'azul';
+     let c = a;
+     a = b;
+     b = c;
+
+     console.log(a);
+     console.log(b);
+
+
+  </script>
+
+</body>
+</html>
