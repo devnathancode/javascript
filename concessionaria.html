@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concessionaria</title>
+</head>
+<body>
+    <script>
+        let carromoto = prompt('digite se quer carro ou moto, c-carro m-moto').toLowerCase();
+        let modelocarro = 'null';
+        let corcarro = 'null';
+        let modelomoto = 'null';
+        let cormoto = 'null';
+
+        if (carromoto === 'c') {
+            modelocarro = prompt('digite o modelo do seu carro, e-eletrico ca-caminhonete').toLowerCase();
+        
+        if (modelocarro === 'e') {
+            corcarro = prompt('digite a cor do seu carro, b-branco p-preto').toLowerCase();
+        
+        if (corcarro === 'b') {
+            alert('seu carro e eletrico e branco');
+        } else  {
+            alert('seu carro e eletrico e preto');
+        }
+    }
+        if (modelocarro === 'ca') {
+            corcarro = prompt('digite a cor do seu carro, b-branco p-preto').toLowerCase();
+            if (corcarro === 'b') {
+                alert('seu carro e uma caminhonete branca')
+            } else {
+                alert('seu carro e uma caminhonete preta')
+            }
+        }
+    }
+        if (carromoto === 'm') {
+            modelomoto = prompt('digite o modelo da sua moto, f-fan-160 k-kawasaki').toLowerCase();
+          if (modelomoto === 'f') {
+            cormoto = prompt('digite a cor da sua moto, b-branco p-preto').toLowerCase();
+          
+          if (cormoto === 'b') {
+            alert('sua moto e uma fan-160 branca');
+          } else {
+            alert('sua moto e uma fan-160 preta');
+          }
+        }
+
+        
+        if (modelomoto === 'k') {
+            cormoto = prompt('digite a cor da sua moto, b-branco p-preto').toLowerCase();
+        
+        if (cormoto === "b") {
+            alert('sua moto e uma kawasaki branca');
+        }else {
+            alert('sua moto e uma kawasaki preta');
+        }
+    }
+    }
+
+
+
+
+
+    </script>
+</body>
+</html>

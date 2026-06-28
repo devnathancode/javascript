@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+</head>
+<body>
+    <h1>tarefas</h1>
+    <input id="tarefa" type="text" placeholder="digite sua tarefa">
+    <ul id="list"></ul>
+    <h2 id="count"></h2>
+    <button id="btn">adicionar</button>
+
+    <script>
+        let botao = document.getElementById('btn');
+
+        function atualizarCount() {
+            let lista = document.getElementById('list')
+            let count = document.getElementById('count')
+            count.textContent = 'contador de tarefas: ' + lista.children.length;
+        }
+        botao.addEventListener('click', function() {
+            let tarefa = document.getElementById('tarefa');
+            let lista = document.getElementById('list');
+            let li = document.createElement('li');
+
+            li.textContent = tarefa.value;
+
+            lista.appendChild(li);
+
+            atualizarCount()
+        })
+        document.getElementById('tarefa').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                botao.click()
+            }
+        })
+    </script>
+</body>
+</html>

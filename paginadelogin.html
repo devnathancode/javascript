@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+  </head>
+  <body>
+    <input id="email" type="email" placeholder="digite seu email" />
+    <input id="senha" type="password" placeholder="dgite sua senha" />
+    <input id="repeat" type="password" placeholder="repita sua senha" />
+    <button id="botao">enviar</button>
+    <p id="msg"></p>
+
+    <script>
+        let botao = document.getElementById("botao");
+
+        botao.addEventListener("click", function () {
+            
+        let email = document.getElementById("email").value;
+
+        let senha = document.getElementById("senha").value;
+
+        let repeat = document.getElementById("repeat").value;
+
+        let mensagem = document.getElementById('msg');
+
+        if (!/[A-Z]/.test(senha)) {
+          mensagem.textContent = "A senha precisa conter 1 caracter maiusculo";
+        }
+        if (!/[a-z]/.test(senha)) {
+          mensagem.textContent = "a senha precisa conter um caracter minusculo";
+        }
+        if (!/\d/.test(senha)) {
+          mensagem.textContent = "precisa conter um numero";
+        }
+        if (!senha.lenght < 8) {
+          mensagem.textContent = "a senha precisa conter 8 caracteres";
+        }
+        if (!/[!@#$%^&*]/.test(senha)) {
+          mensagem.textContent = "a senha precisa conter um caracter especial";
+        }
+        })
+      
+    </script>
+  </body>
+</html>
